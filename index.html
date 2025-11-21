@@ -1,7 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script>
-      window.location.href = "https://git.compgenius.com/slope_plus/html-classic.itch.zone/html/14788017/SlopePlus1.3.1Web/index.html";
-    </script>
+  <script>
+    document.getElementById('submit_button').onclick = function() {
+      let inputValue = document.getElementById('password').value;
+      alert('you entered' + inputValue);
+    }
+  </script>
   </head>
+<body>
+<form>
+  <label for="password">First name:</label><br>
+  <input type="text" id="password" name="password"><br>
+  <input type="submit" value="Submit" id="submit_button">
+</form> 
+</body>
 </html>
