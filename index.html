@@ -2,17 +2,15 @@
 <html>
   <head>
   <script>
-    document.getElementById('submit_button').onclick = function() {
+    document.getElementById('submit').onclick = function() {
       let inputValue = document.getElementById('password').value;
       alert('you entered' + inputValue);
     }
   </script>
   </head>
 <body>
-<form>
-  <label for="password">First name:</label><br>
+  <label for="password">Enter the password (test document)</label><br>
   <input type="text" id="password" name="password"><br>
-  <input type="submit" value="Submit" id="submit_button">
-</form> 
+  <button id='submit'>Submit</button>
 </body>
 </html>
