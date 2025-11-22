@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html id='content-area'>
   <head>
   <script>
     function checkCode() {
       let inputValue = document.getElementById('password').value;
       if(inputValue === 'whyudodistome') {
-        alert('you got it right')
+        loadNewContent();
       }
+    }
+    function loadNewContent() {
+        fetch('https://git.compgenius.com/slope_plus/html-classic.itch.zone/html/14788017/SlopePlus1.3.1Web')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content-area').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading new content:', error));
     }
   </script>
   </head>
