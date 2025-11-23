@@ -9,13 +9,7 @@
       }
     }
     function loadNewContent() {
-        fetch('index2.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('content-area').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading new content:', error));
-    }
+        document.getElementById('content-area').innerHTML = <iframe src="https://git.compgenius.com/index2.html">;
   </script>
   </head>
 <body>
